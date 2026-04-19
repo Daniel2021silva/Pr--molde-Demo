@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PréMold ERP - Insumos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <div class="logo-box">
+        <div class="logo-icon"><i class="fa-solid fa-industry"></i></div>
+        <div>
+          <h2>PréMold ERP</h2>
+          <span>Gestão Industrial</span>
+        </div>
+      </div>
+
+      <nav class="menu">
+        <a href="index.html"><i class="fa-solid fa-chart-line"></i> Dashboard</a>
+        <a href="produtos.html"><i class="fa-solid fa-cube"></i> Produtos</a>
+        <a href="insumos.html" class="active"><i class="fa-solid fa-boxes-stacked"></i> Insumos</a>
+        <a href="estoque.html"><i class="fa-solid fa-warehouse"></i> Estoque</a>
+        <a href="producao.html"><i class="fa-solid fa-gears"></i> Produção</a>
+        <a href="vendas.html"><i class="fa-solid fa-cart-shopping"></i> Vendas</a>
+        <a href="financeiro.html"><i class="fa-solid fa-money-bill-trend-up"></i> Financeiro</a>
+        <a href="relatorios.html"><i class="fa-solid fa-file-lines"></i> Relatórios</a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="status-dot"></div>
+        <span>Sistema online</span>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <p class="tag">Matéria-prima</p>
+          <h1>Controle de Insumos</h1>
+          <span class="subtitle">Acompanhamento de estoque, consumo, custo médio e nível mínimo dos materiais</span>
+        </div>
+
+        <div class="topbar-actions">
+          <div class="date-box">
+            <i class="fa-regular fa-calendar"></i>
+            <span>19 Abr 2026</span>
+          </div>
+          <button class="btn-primary">
+            <i class="fa-solid fa-plus"></i> Novo Insumo
+          </button>
+        </div>
+      </header>
+
+      <section class="cards">
+        <div class="card kpi-card blue">
+          <div class="card-top">
+            <span>Total de Insumos</span>
+            <i class="fa-solid fa-layer-group"></i>
+          </div>
+          <h3>42</h3>
+          <p>Itens cadastrados no sistema</p>
+        </div>
+
+        <div class="card kpi-card gold">
+          <div class="card-top">
+            <span>Consumo do Dia</span>
+            <i class="fa-solid fa-gauge-high"></i>
+          </div>
+          <h3>8,4 t</h3>
+          <p>Uso acumulado na produção</p>
+        </div>
+
+        <div class="card kpi-card red">
+          <div class="card-top">
+            <span>Itens em Alerta</span>
+            <i class="fa-solid fa-triangle-exclamation"></i>
+          </div>
+          <h3>3</h3>
+          <p>Reposição necessária</p>
+        </div>
+
+        <div class="card kpi-card green">
+          <div class="card-top">
+            <span>Custo Médio Total</span>
+            <i class="fa-solid fa-coins"></i>
+          </div>
+          <h3>R$ 84,2 mil</h3>
+          <p>Valor estimado dos insumos</p>
+        </div>
+      </section>
+
+      <section class="dashboard-grid">
+        <div class="card chart-card">
+          <div class="section-header">
+            <h2>Consumo Semanal</h2>
+            <span>Últimos 7 dias</span>
+          </div>
+
+          <div class="fake-chart bars">
+            <div class="bar-group">
+              <div class="bar" style="height: 48%;"></div>
+              <span>Seg</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 56%;"></div>
+              <span>Ter</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 62%;"></div>
+              <span>Qua</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 79%;"></div>
+              <span>Qui</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 90%;"></div>
+              <span>Sex</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 58%;"></div>
+              <span>Sáb</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 67%;"></div>
+              <span>Dom</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card summary-card">
+          <div class="section-header">
+            <h2>Resumo Operacional</h2>
+            <span>Visão rápida</span>
+          </div>
+
+          <div class="summary-list">
+            <div class="summary-item">
+              <span>Insumo mais consumido</span>
+              <strong>Cimento</strong>
+            </div>
+            <div class="summary-item">
+              <span>Maior custo unitário</span>
+              <strong>Pigmento</strong>
+            </div>
+            <div class="summary-item">
+              <span>Reposições pendentes</span>
+              <strong>2</strong>
+            </div>
+            <div class="summary-item">
+              <span>Nível de cobertura</span>
+              <strong>12 dias</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bottom-grid">
+        <div class="card table-card">
+          <div class="section-header">
+            <h2>Estoque de Insumos</h2>
+            <span>Base atualizada</span>
+          </div>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Código</th>
+                  <th>Insumo</th>
+                  <th>Unidade</th>
+                  <th>Estoque Atual</th>
+                  <th>Estoque Mínimo</th>
+                  <th>Custo Médio</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>INS001</td>
+                  <td>Cimento CP-II</td>
+                  <td>kg</td>
+                  <td>12.400</td>
+                  <td>8.000</td>
+                  <td>R$ 0,74</td>
+                  <td><span class="badge green">Normal</span></td>
+                </tr>
+                <tr>
+                  <td>INS002</td>
+                  <td>Areia Média</td>
+                  <td>m³</td>
+                  <td>38</td>
+                  <td>20</td>
+                  <td>R$ 145,00</td>
+                  <td><span class="badge green">Normal</span></td>
+                </tr>
+                <tr>
+                  <td>INS003</td>
+                  <td>Brita 0</td>
+                  <td>m³</td>
+                  <td>14</td>
+                  <td>18</td>
+                  <td>R$ 168,00</td>
+                  <td><span class="badge gold">Baixo</span></td>
+                </tr>
+                <tr>
+                  <td>INS004</td>
+                  <td>Pó de Pedra</td>
+                  <td>m³</td>
+                  <td>29</td>
+                  <td>15</td>
+                  <td>R$ 120,00</td>
+                  <td><span class="badge green">Normal</span></td>
+                </tr>
+                <tr>
+                  <td>INS005</td>
+                  <td>Pigmento Grafite</td>
+                  <td>kg</td>
+                  <td>42</td>
+                  <td>20</td>
+                  <td>R$ 19,80</td>
+                  <td><span class="badge green">Normal</span></td>
+                </tr>
+                <tr>
+                  <td>INS006</td>
+                  <td>Aditivo Plastificante</td>
+                  <td>un</td>
+                  <td>4</td>
+                  <td>10</td>
+                  <td>R$ 89,00</td>
+                  <td><span class="badge red">Crítico</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card stock-card">
+          <div class="section-header">
+            <h2>Alertas de Insumos</h2>
+            <span>Reposição</span>
+          </div>
+
+          <div class="alert-list">
+            <div class="alert-item">
+              <div>
+                <strong>Brita 0</strong>
+                <p>14 m³ em estoque, abaixo do mínimo</p>
+              </div>
+              <span class="alert-warning">Baixo</span>
+            </div>
+
+            <div class="alert-item">
+              <div>
+                <strong>Aditivo Plastificante</strong>
+                <p>Somente 4 unidades disponíveis</p>
+              </div>
+              <span class="alert-danger">Crítico</span>
+            </div>
+
+            <div class="alert-item">
+              <div>
+                <strong>Cimento CP-II</strong>
+                <p>Maior consumo médio da operação</p>
+              </div>
+              <span class="alert-ok">Monitorado</span>
+            </div>
+
+            <div class="alert-item">
+              <div>
+                <strong>Pigmento Grafite</strong>
+                <p>Custo elevado por lote produzido</p>
+              </div>
+              <span class="alert-warning">Atenção</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+  </div>
+
+</body>
+</html>

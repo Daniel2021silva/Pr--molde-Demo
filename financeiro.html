@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PréMold ERP - Financeiro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <div class="logo-box">
+        <div class="logo-icon"><i class="fa-solid fa-industry"></i></div>
+        <div>
+          <h2>PréMold ERP</h2>
+          <span>Gestão Industrial</span>
+        </div>
+      </div>
+
+      <nav class="menu">
+        <a href="index.html"><i class="fa-solid fa-chart-line"></i> Dashboard</a>
+        <a href="produtos.html"><i class="fa-solid fa-cube"></i> Produtos</a>
+        <a href="insumos.html"><i class="fa-solid fa-boxes-stacked"></i> Insumos</a>
+        <a href="estoque.html"><i class="fa-solid fa-warehouse"></i> Estoque</a>
+        <a href="producao.html"><i class="fa-solid fa-gears"></i> Produção</a>
+        <a href="vendas.html"><i class="fa-solid fa-cart-shopping"></i> Vendas</a>
+        <a href="financeiro.html" class="active"><i class="fa-solid fa-money-bill-trend-up"></i> Financeiro</a>
+        <a href="relatorios.html"><i class="fa-solid fa-file-lines"></i> Relatórios</a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="status-dot"></div>
+        <span>Sistema online</span>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <p class="tag">Gestão financeira</p>
+          <h1>Financeiro Industrial</h1>
+          <span class="subtitle">Fluxo de caixa, receitas, despesas, margem e previsibilidade financeira</span>
+        </div>
+
+        <div class="topbar-actions">
+          <div class="date-box">
+            <i class="fa-regular fa-calendar"></i>
+            <span>19 Abr 2026</span>
+          </div>
+          <button class="btn-primary">
+            <i class="fa-solid fa-plus"></i> Novo Lançamento
+          </button>
+        </div>
+      </header>
+
+      <section class="cards">
+        <div class="card kpi-card green">
+          <div class="card-top">
+            <span>Entradas no Mês</span>
+            <i class="fa-solid fa-arrow-trend-up"></i>
+          </div>
+          <h3>R$ 128,4 mil</h3>
+          <p>Receitas já confirmadas</p>
+        </div>
+
+        <div class="card kpi-card red">
+          <div class="card-top">
+            <span>Saídas no Mês</span>
+            <i class="fa-solid fa-arrow-trend-down"></i>
+          </div>
+          <h3>R$ 82,7 mil</h3>
+          <p>Custos, compras e despesas</p>
+        </div>
+
+        <div class="card kpi-card blue">
+          <div class="card-top">
+            <span>Lucro Estimado</span>
+            <i class="fa-solid fa-chart-pie"></i>
+          </div>
+          <h3>R$ 45,7 mil</h3>
+          <p>Resultado operacional atual</p>
+        </div>
+
+        <div class="card kpi-card gold">
+          <div class="card-top">
+            <span>Contas a Receber</span>
+            <i class="fa-solid fa-file-invoice-dollar"></i>
+          </div>
+          <h3>R$ 21,8 mil</h3>
+          <p>Títulos pendentes de recebimento</p>
+        </div>
+      </section>
+
+      <section class="dashboard-grid">
+        <div class="card chart-card">
+          <div class="section-header">
+            <h2>Desempenho Financeiro</h2>
+            <span>Últimos 7 dias</span>
+          </div>
+
+          <div class="fake-chart bars">
+            <div class="bar-group">
+              <div class="bar" style="height: 40%;"></div>
+              <span>Seg</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 64%;"></div>
+              <span>Ter</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 58%;"></div>
+              <span>Qua</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 82%;"></div>
+              <span>Qui</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 88%;"></div>
+              <span>Sex</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 55%;"></div>
+              <span>Sáb</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 70%;"></div>
+              <span>Dom</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card summary-card">
+          <div class="section-header">
+            <h2>Resumo Executivo</h2>
+            <span>Visão rápida</span>
+          </div>
+
+          <div class="summary-list">
+            <div class="summary-item">
+              <span>Margem operacional</span>
+              <strong>35,6%</strong>
+            </div>
+            <div class="summary-item">
+              <span>Ticket médio por pedido</span>
+              <strong>R$ 7,1 mil</strong>
+            </div>
+            <div class="summary-item">
+              <span>Inadimplência atual</span>
+              <strong>1,8%</strong>
+            </div>
+            <div class="summary-item">
+              <span>Caixa projetado 30 dias</span>
+              <strong>R$ 62 mil</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bottom-grid">
+        <div class="card table-card">
+          <div class="section-header">
+            <h2>Lançamentos Financeiros</h2>
+            <span>Atualizações recentes</span>
+          </div>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Data</th>
+                  <th>Descrição</th>
+                  <th>Categoria</th>
+                  <th>Tipo</th>
+                  <th>Valor</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>19/04/2026</td>
+                  <td>Recebimento Pedido #1028</td>
+                  <td>Venda</td>
+                  <td>Entrada</td>
+                  <td>R$ 5.850,00</td>
+                  <td><span class="badge green">Recebido</span></td>
+                </tr>
+                <tr>
+                  <td>19/04/2026</td>
+                  <td>Compra de cimento</td>
+                  <td>Matéria-prima</td>
+                  <td>Saída</td>
+                  <td>R$ 12.400,00</td>
+                  <td><span class="badge red">Pago</span></td>
+                </tr>
+                <tr>
+                  <td>18/04/2026</td>
+                  <td>Energia fábrica</td>
+                  <td>Despesa fixa</td>
+                  <td>Saída</td>
+                  <td>R$ 4.280,00</td>
+                  <td><span class="badge gold">Processado</span></td>
+                </tr>
+                <tr>
+                  <td>18/04/2026</td>
+                  <td>Venda pavers lote 3</td>
+                  <td>Venda</td>
+                  <td>Entrada</td>
+                  <td>R$ 12.400,00</td>
+                  <td><span class="badge green">Confirmado</span></td>
+                </tr>
+                <tr>
+                  <td>17/04/2026</td>
+                  <td>Frete terceirizado</td>
+                  <td>Logística</td>
+                  <td>Saída</td>
+                  <td>R$ 2.160,00</td>
+                  <td><span class="badge blue">Lançado</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card stock-card">
+          <div class="section-header">
+            <h2>Pontos de Atenção</h2>
+            <span>Financeiro</span>
+          </div>
+
+          <div class="alert-list">
+            <div class="alert-item">
+              <div>
+                <strong>Clientes a receber</strong>
+                <p>4 títulos vencendo em 5 dias</p>
+              </div>
+              <span class="alert-warning">Atenção</span>
+            </div>
+
+            <div class="alert-item">
+              <div>
+                <strong>Compra de cimento</strong>
+                <p>Impacto alto no caixa desta semana</p>
+              </div>
+              <span class="alert-danger">Crítico</span>
+            </div>
+
+            <div class="alert-item">
+              <div>
+                <strong>Margem do paver</strong>
+                <p>Produto com melhor retorno atual</p>
+              </div>
+              <span class="alert-ok">Oportunidade</span>
+            </div>
+
+            <div class="alert-item">
+              <div>
+                <strong>Despesas fixas</strong>
+                <p>Estáveis nos últimos 30 dias</p>
+              </div>
+              <span class="alert-ok">Normal</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+  </div>
+
+</body>
+</html>

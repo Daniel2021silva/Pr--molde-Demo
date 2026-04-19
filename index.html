@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PréMold ERP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <div class="logo-box">
+        <div class="logo-icon"><i class="fa-solid fa-industry"></i></div>
+        <div>
+          <h2>PréMold ERP</h2>
+          <span>Gestão Industrial</span>
+        </div>
+      </div>
+
+      <nav class="menu">
+        <a href="index.html" class="active"><i class="fa-solid fa-chart-line"></i> Dashboard</a>
+        <a href="produtos.html"><i class="fa-solid fa-cube"></i> Produtos</a>
+        <a href="insumos.html"><i class="fa-solid fa-boxes-stacked"></i> Insumos</a>
+        <a href="estoque.html"><i class="fa-solid fa-warehouse"></i> Estoque</a>
+        <a href="producao.html"><i class="fa-solid fa-gears"></i> Produção</a>
+        <a href="vendas.html"><i class="fa-solid fa-cart-shopping"></i> Vendas</a>
+        <a href="financeiro.html"><i class="fa-solid fa-money-bill-trend-up"></i> Financeiro</a>
+        <a href="relatorios.html"><i class="fa-solid fa-file-lines"></i> Relatórios</a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="status-dot"></div>
+        <span>Sistema online</span>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <p class="tag">Painel executivo</p>
+          <h1>Dashboard Industrial</h1>
+          <span class="subtitle">Controle completo da operação de pré-moldados</span>
+        </div>
+
+        <div class="topbar-actions">
+          <div class="date-box">
+            <i class="fa-regular fa-calendar"></i>
+            <span>19 Abr 2026</span>
+          </div>
+          <button class="btn-primary">
+            <i class="fa-solid fa-plus"></i> Novo Pedido
+          </button>
+        </div>
+      </header>
+
+      <section class="cards">
+        <div class="card kpi-card blue">
+          <div class="card-top">
+            <span>Produção do Dia</span>
+            <i class="fa-solid fa-gears"></i>
+          </div>
+          <h3>4.850 peças</h3>
+          <p>+12% em relação a ontem</p>
+        </div>
+
+        <div class="card kpi-card gold">
+          <div class="card-top">
+            <span>Pedidos em Aberto</span>
+            <i class="fa-solid fa-clipboard-list"></i>
+          </div>
+          <h3>18</h3>
+          <p>6 com entrega para hoje</p>
+        </div>
+
+        <div class="card kpi-card red">
+          <div class="card-top">
+            <span>Estoque Crítico</span>
+            <i class="fa-solid fa-triangle-exclamation"></i>
+          </div>
+          <h3>3 itens</h3>
+          <p>Cimento, brita e aditivo</p>
+        </div>
+
+        <div class="card kpi-card green">
+          <div class="card-top">
+            <span>Faturamento do Mês</span>
+            <i class="fa-solid fa-sack-dollar"></i>
+          </div>
+          <h3>R$ 128.450</h3>
+          <p>Meta mensal: 81% atingida</p>
+        </div>
+      </section>
+
+      <section class="dashboard-grid">
+        <div class="card chart-card">
+          <div class="section-header">
+            <h2>Produção Semanal</h2>
+            <span>Últimos 7 dias</span>
+          </div>
+
+          <div class="fake-chart bars">
+            <div class="bar-group">
+              <div class="bar" style="height: 55%;"></div>
+              <span>Seg</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 72%;"></div>
+              <span>Ter</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 68%;"></div>
+              <span>Qua</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 85%;"></div>
+              <span>Qui</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 92%;"></div>
+              <span>Sex</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 60%;"></div>
+              <span>Sáb</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 78%;"></div>
+              <span>Dom</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card summary-card">
+          <div class="section-header">
+            <h2>Indicadores da Operação</h2>
+            <span>Resumo rápido</span>
+          </div>
+
+          <div class="summary-list">
+            <div class="summary-item">
+              <span>Eficiência da produção</span>
+              <strong>93%</strong>
+            </div>
+            <div class="summary-item">
+              <span>Aproveitamento de insumos</span>
+              <strong>88%</strong>
+            </div>
+            <div class="summary-item">
+              <span>Pedidos entregues no prazo</span>
+              <strong>96%</strong>
+            </div>
+            <div class="summary-item">
+              <span>Margem operacional</span>
+              <strong>24%</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bottom-grid">
+        <div class="card table-card">
+          <div class="section-header">
+            <h2>Últimos Pedidos</h2>
+            <span>Hoje</span>
+          </div>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Pedido</th>
+                  <th>Cliente</th>
+                  <th>Produto</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>#1048</td>
+                  <td>Construtora Atlas</td>
+                  <td>Bloco estrutural</td>
+                  <td><span class="badge green">Em produção</span></td>
+                </tr>
+                <tr>
+                  <td>#1047</td>
+                  <td>Obra Norte Sul</td>
+                  <td>Meio-fio</td>
+                  <td><span class="badge blue">Separação</span></td>
+                </tr>
+                <tr>
+                  <td>#1046</td>
+                  <td>Engemax</td>
+                  <td>Laje pré-moldada</td>
+                  <td><span class="badge gold">Aguardando</span></td>
+                </tr>
+                <tr>
+                  <td>#1045</td>
+                  <td>Residencial Solar</td>
+                  <td>Pilar</td>
+                  <td><span class="badge red">Estoque baixo</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card stock-card">
+          <div class="section-header">
+            <h2>Alertas de Estoque</h2>
+            <span>Atenção imediata</span>
+          </div>
+
+          <div class="alert-list">
+            <div class="alert-item">
+              <div>
+                <strong>Cimento CP-II</strong>
+                <p>12 sacos restantes</p>
+              </div>
+              <span class="alert-danger">Crítico</span>
+            </div>
+
+            <div class="alert-item">
+              <div>
+                <strong>Brita 1</strong>
+                <p>1,2 m³ disponível</p>
+              </div>
+              <span class="alert-warning">Baixo</span>
+            </div>
+
+            <div class="alert-item">
+              <div>
+                <strong>Aditivo plastificante</strong>
+                <p>4 unidades em estoque</p>
+              </div>
+              <span class="alert-danger">Crítico</span>
+            </div>
+
+            <div class="alert-item">
+              <div>
+                <strong>Malha POP</strong>
+                <p>16 unidades disponíveis</p>
+              </div>
+              <span class="alert-ok">Normal</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+  </div>
+
+</body>
+</html>

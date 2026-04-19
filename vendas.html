@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PréMold ERP - Vendas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <div class="logo-box">
+        <div class="logo-icon"><i class="fa-solid fa-industry"></i></div>
+        <div>
+          <h2>PréMold ERP</h2>
+          <span>Gestão Industrial</span>
+        </div>
+      </div>
+
+      <nav class="menu">
+        <a href="index.html"><i class="fa-solid fa-chart-line"></i> Dashboard</a>
+        <a href="produtos.html"><i class="fa-solid fa-cube"></i> Produtos</a>
+        <a href="insumos.html"><i class="fa-solid fa-boxes-stacked"></i> Insumos</a>
+        <a href="estoque.html"><i class="fa-solid fa-warehouse"></i> Estoque</a>
+        <a href="producao.html"><i class="fa-solid fa-gears"></i> Produção</a>
+        <a href="vendas.html" class="active"><i class="fa-solid fa-cart-shopping"></i> Vendas</a>
+        <a href="financeiro.html"><i class="fa-solid fa-money-bill-trend-up"></i> Financeiro</a>
+        <a href="relatorios.html"><i class="fa-solid fa-file-lines"></i> Relatórios</a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="status-dot"></div>
+        <span>Sistema online</span>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <p class="tag">Gestão comercial</p>
+          <h1>Painel de Vendas</h1>
+          <span class="subtitle">Pedidos, clientes, faturamento e acompanhamento das entregas</span>
+        </div>
+
+        <div class="topbar-actions">
+          <div class="date-box">
+            <i class="fa-regular fa-calendar"></i>
+            <span>19 Abr 2026</span>
+          </div>
+          <button class="btn-primary">
+            <i class="fa-solid fa-plus"></i> Novo Pedido
+          </button>
+        </div>
+      </header>
+
+      <section class="cards">
+        <div class="card kpi-card green">
+          <div class="card-top">
+            <span>Faturamento do Mês</span>
+            <i class="fa-solid fa-sack-dollar"></i>
+          </div>
+          <h3>R$ 128,4 mil</h3>
+          <p>Receita acumulada no período</p>
+        </div>
+
+        <div class="card kpi-card blue">
+          <div class="card-top">
+            <span>Pedidos Ativos</span>
+            <i class="fa-solid fa-file-invoice"></i>
+          </div>
+          <h3>18</h3>
+          <p>Pedidos em andamento</p>
+        </div>
+
+        <div class="card kpi-card gold">
+          <div class="card-top">
+            <span>Ticket Médio</span>
+            <i class="fa-solid fa-chart-column"></i>
+          </div>
+          <h3>R$ 7,1 mil</h3>
+          <p>Valor médio por venda</p>
+        </div>
+
+        <div class="card kpi-card red">
+          <div class="card-top">
+            <span>Entregas Pendentes</span>
+            <i class="fa-solid fa-truck-fast"></i>
+          </div>
+          <h3>6</h3>
+          <p>Expedições para os próximos dias</p>
+        </div>
+      </section>
+
+      <section class="dashboard-grid">
+        <div class="card chart-card">
+          <div class="section-header">
+            <h2>Ritmo Comercial</h2>
+            <span>Últimos 7 dias</span>
+          </div>
+
+          <div class="fake-chart bars">
+            <div class="bar-group"><div class="bar" style="height: 44%;"></div><span>Seg</span></div>
+            <div class="bar-group"><div class="bar" style="height: 59%;"></div><span>Ter</span></div>
+            <div class="bar-group"><div class="bar" style="height: 66%;"></div><span>Qua</span></div>
+            <div class="bar-group"><div class="bar" style="height: 84%;"></div><span>Qui</span></div>
+            <div class="bar-group"><div class="bar" style="height: 92%;"></div><span>Sex</span></div>
+            <div class="bar-group"><div class="bar" style="height: 61%;"></div><span>Sáb</span></div>
+            <div class="bar-group"><div class="bar" style="height: 73%;"></div><span>Dom</span></div>
+          </div>
+        </div>
+
+        <div class="card summary-card">
+          <div class="section-header">
+            <h2>Resumo Comercial</h2>
+            <span>Hoje</span>
+          </div>
+
+          <div class="summary-list">
+            <div class="summary-item">
+              <span>Maior cliente</span>
+              <strong>Construtora Alfa</strong>
+            </div>
+            <div class="summary-item">
+              <span>Produto líder</span>
+              <strong>Bloco 14</strong>
+            </div>
+            <div class="summary-item">
+              <span>Conversão de pedidos</span>
+              <strong>87%</strong>
+            </div>
+            <div class="summary-item">
+              <span>Prazo médio entrega</span>
+              <strong>2,4 dias</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bottom-grid">
+        <div class="card table-card">
+          <div class="section-header">
+            <h2>Pedidos Recentes</h2>
+            <span>Atualização em tempo real</span>
+          </div>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Pedido</th>
+                  <th>Cliente</th>
+                  <th>Itens</th>
+                  <th>Total</th>
+                  <th>Entrega</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>#1028</td>
+                  <td>Construtora Alfa</td>
+                  <td>1.500 blocos 14</td>
+                  <td>R$ 5.850,00</td>
+                  <td>20/04/2026</td>
+                  <td><span class="badge green">Confirmado</span></td>
+                </tr>
+                <tr>
+                  <td>#1029</td>
+                  <td>Obra Sul Engenharia</td>
+                  <td>300 canaletas</td>
+                  <td>R$ 1.260,00</td>
+                  <td>20/04/2026</td>
+                  <td><span class="badge gold">Separando</span></td>
+                </tr>
+                <tr>
+                  <td>#1030</td>
+                  <td>Pavitec Urbanismo</td>
+                  <td>4.000 pavers</td>
+                  <td>R$ 12.400,00</td>
+                  <td>21/04/2026</td>
+                  <td><span class="badge blue">Faturado</span></td>
+                </tr>
+                <tr>
+                  <td>#1031</td>
+                  <td>Cliente Final</td>
+                  <td>40 mourões</td>
+                  <td>R$ 1.240,00</td>
+                  <td>22/04/2026</td>
+                  <td><span class="badge red">Pendente</span></td>
+                </tr>
+                <tr>
+                  <td>#1032</td>
+                  <td>Constrular Materiais</td>
+                  <td>900 blocos 19</td>
+                  <td>R$ 3.960,00</td>
+                  <td>22/04/2026</td>
+                  <td><span class="badge green">Aprovado</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card stock-card">
+          <div class="section-header">
+            <h2>Pontos de Atenção</h2>
+            <span>Vendas</span>
+          </div>
+
+          <div class="alert-list">
+            <div class="alert-item">
+              <div>
+                <strong>Pedido #1031</strong>
+                <p>Aguardando confirmação do cliente</p>
+              </div>
+              <span class="alert-warning">Pendente</span>
+            </div>
+
+            <div class="alert-item">
+              <div>
+                <strong>Pavitec Urbanismo</strong>
+                <p>Maior pedido do período</p>
+              </div>
+              <span class="alert-ok">Destaque</span>
+            </div>
+
+            <div class="alert-item">
+              <div>
+                <strong>Canaleta 14</strong>
+                <p>Venda ativa com estoque sensível</p>
+              </div>
+              <span class="alert-danger">Risco</span>
+            </div>
+
+            <div class="alert-item">
+              <div>
+                <strong>Construtora Alfa</strong>
+                <p>Cliente com maior recorrência</p>
+              </div>
+              <span class="alert-ok">Top cliente</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+  </div>
+
+</body>
+</html>

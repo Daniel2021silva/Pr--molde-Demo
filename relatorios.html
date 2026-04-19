@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PréMold ERP - Relatórios</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <div class="logo-box">
+        <div class="logo-icon"><i class="fa-solid fa-industry"></i></div>
+        <div>
+          <h2>PréMold ERP</h2>
+          <span>Gestão Industrial</span>
+        </div>
+      </div>
+
+      <nav class="menu">
+        <a href="index.html"><i class="fa-solid fa-chart-line"></i> Dashboard</a>
+        <a href="produtos.html"><i class="fa-solid fa-cube"></i> Produtos</a>
+        <a href="insumos.html"><i class="fa-solid fa-boxes-stacked"></i> Insumos</a>
+        <a href="estoque.html"><i class="fa-solid fa-warehouse"></i> Estoque</a>
+        <a href="producao.html"><i class="fa-solid fa-gears"></i> Produção</a>
+        <a href="vendas.html"><i class="fa-solid fa-cart-shopping"></i> Vendas</a>
+        <a href="financeiro.html"><i class="fa-solid fa-money-bill-trend-up"></i> Financeiro</a>
+        <a href="relatorios.html" class="active"><i class="fa-solid fa-file-lines"></i> Relatórios</a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="status-dot"></div>
+        <span>Sistema online</span>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <p class="tag">Inteligência gerencial</p>
+          <h1>Relatórios Executivos</h1>
+          <span class="subtitle">Indicadores estratégicos de produção, estoque, vendas, margem e desempenho operacional</span>
+        </div>
+
+        <div class="topbar-actions">
+          <div class="date-box">
+            <i class="fa-regular fa-calendar"></i>
+            <span>19 Abr 2026</span>
+          </div>
+          <button class="btn-primary">
+            <i class="fa-solid fa-download"></i> Exportar PDF
+          </button>
+        </div>
+      </header>
+
+      <section class="cards">
+        <div class="card kpi-card blue">
+          <div class="card-top">
+            <span>Produto Mais Vendido</span>
+            <i class="fa-solid fa-box-open"></i>
+          </div>
+          <h3>Bloco 14</h3>
+          <p>Líder em volume no mês</p>
+        </div>
+
+        <div class="card kpi-card gold">
+          <div class="card-top">
+            <span>Maior Cliente</span>
+            <i class="fa-solid fa-building"></i>
+          </div>
+          <h3>Construtora Alfa</h3>
+          <p>Maior faturamento acumulado</p>
+        </div>
+
+        <div class="card kpi-card green">
+          <div class="card-top">
+            <span>Margem Média</span>
+            <i class="fa-solid fa-percent"></i>
+          </div>
+          <h3>31,4%</h3>
+          <p>Rentabilidade média da operação</p>
+        </div>
+
+        <div class="card kpi-card red">
+          <div class="card-top">
+            <span>Produção Mensal</span>
+            <i class="fa-solid fa-industry"></i>
+          </div>
+          <h3>96.200 un</h3>
+          <p>Volume total produzido no período</p>
+        </div>
+      </section>
+
+      <section class="dashboard-grid">
+        <div class="card chart-card">
+          <div class="section-header">
+            <h2>Performance Geral</h2>
+            <span>Últimos 7 dias</span>
+          </div>
+
+          <div class="fake-chart bars">
+            <div class="bar-group">
+              <div class="bar" style="height: 50%;"></div>
+              <span>Seg</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 64%;"></div>
+              <span>Ter</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 60%;"></div>
+              <span>Qua</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 82%;"></div>
+              <span>Qui</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 91%;"></div>
+              <span>Sex</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 58%;"></div>
+              <span>Sáb</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 73%;"></div>
+              <span>Dom</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card summary-card">
+          <div class="section-header">
+            <h2>Resumo Estratégico</h2>
+            <span>Painel rápido</span>
+          </div>
+
+          <div class="summary-list">
+            <div class="summary-item">
+              <span>Crescimento mensal</span>
+              <strong>+12%</strong>
+            </div>
+            <div class="summary-item">
+              <span>Prazo médio entrega</span>
+              <strong>2,4 dias</strong>
+            </div>
+            <div class="summary-item">
+              <span>Índice de quebra</span>
+              <strong>1,8%</strong>
+            </div>
+            <div class="summary-item">
+              <span>Eficiência fabril</span>
+              <strong>93%</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bottom-grid">
+        <div class="card table-card">
+          <div class="section-header">
+            <h2>Resumo Gerencial</h2>
+            <span>Indicadores consolidados</span>
+          </div>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Relatório</th>
+                  <th>Resultado</th>
+                  <th>Observação</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Consumo de cimento</td>
+                  <td>48.200 kg/mês</td>
+                  <td>Dentro da meta</td>
+                  <td><span class="badge green">Controlado</span></td>
+                </tr>
+                <tr>
+                  <td>Faturamento bruto</td>
+                  <td>R$ 128.450,00</td>
+                  <td>Crescimento de 12%</td>
+                  <td><span class="badge green">Positivo</span></td>
+                </tr>
+                <tr>
+                  <td>Índice de quebra</td>
+                  <td>1,8%</td>
+                  <td>Abaixo do limite</td>
+                  <td><span class="badge blue">Saudável</span></td>
+                </tr>
+                <tr>
+                  <td>Prazo médio de entrega</td>
+                  <td>2,4 dias</td>
+                  <td>Bom desempenho</td>
+                  <td><span class="badge green">Estável</span></td>
+                </tr>
+                <tr>
+                  <td>Margem por produto</td>
+                  <td>31,4%</td>
+                  <td>Acima da meta mínima</td>
+                  <td><span class="badge gold">Monitorar</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card stock-card">
+          <div class="section-header">
+            <h2>Insights do Período</h2>
+            <span>Análise</span>
+          </div>
+
+          <div class="alert-list">
+            <div class="alert-item">
+              <div>
+                <strong>Bloco 14</strong>
+                <p>Produto com maior giro do mês</p>
+              </div>
+              <span class="alert-ok">Destaque</span>
+            </div>
+
+            <div class="alert-item">
+              <div>
+                <strong>Construtora Alfa</strong>
+                <p>Cliente com maior participação na receita</p>
+              </div>
+              <span class="alert-ok">Top cliente</span>
+            </div>
+
+            <div class="alert-item">
+              <div>
+                <strong>Margem operacional</strong>
+                <p>Boa performance, mas exige acompanhamento</p>
+              </div>
+              <span class="alert-warning">Atenção</span>
+            </div>
+
+            <div class="alert-item">
+              <div>
+                <strong>Quebra de produção</strong>
+                <p>Índice controlado e abaixo da meta limite</p>
+              </div>
+              <span class="alert-ok">Normal</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+  </div>
+
+</body>
+</html>

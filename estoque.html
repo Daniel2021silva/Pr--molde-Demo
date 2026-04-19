@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PréMold ERP - Estoque</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <div class="logo-box">
+        <div class="logo-icon"><i class="fa-solid fa-industry"></i></div>
+        <div>
+          <h2>PréMold ERP</h2>
+          <span>Gestão Industrial</span>
+        </div>
+      </div>
+
+      <nav class="menu">
+        <a href="index.html"><i class="fa-solid fa-chart-line"></i> Dashboard</a>
+        <a href="produtos.html"><i class="fa-solid fa-cube"></i> Produtos</a>
+        <a href="insumos.html"><i class="fa-solid fa-boxes-stacked"></i> Insumos</a>
+        <a href="estoque.html" class="active"><i class="fa-solid fa-warehouse"></i> Estoque</a>
+        <a href="producao.html"><i class="fa-solid fa-gears"></i> Produção</a>
+        <a href="vendas.html"><i class="fa-solid fa-cart-shopping"></i> Vendas</a>
+        <a href="financeiro.html"><i class="fa-solid fa-money-bill-trend-up"></i> Financeiro</a>
+        <a href="relatorios.html"><i class="fa-solid fa-file-lines"></i> Relatórios</a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="status-dot"></div>
+        <span>Sistema online</span>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <p class="tag">Controle logístico</p>
+          <h1>Estoque Industrial</h1>
+          <span class="subtitle">Entradas, saídas, níveis críticos e rastreabilidade dos materiais</span>
+        </div>
+
+        <div class="topbar-actions">
+          <div class="date-box">
+            <i class="fa-regular fa-calendar"></i>
+            <span>19 Abr 2026</span>
+          </div>
+          <button class="btn-primary">
+            <i class="fa-solid fa-plus"></i> Nova Movimentação
+          </button>
+        </div>
+      </header>
+
+      <section class="cards">
+        <div class="card kpi-card blue">
+          <div class="card-top">
+            <span>Entradas Hoje</span>
+            <i class="fa-solid fa-arrow-down"></i>
+          </div>
+          <h3>12</h3>
+          <p>Reposições e compras recebidas</p>
+        </div>
+
+        <div class="card kpi-card gold">
+          <div class="card-top">
+            <span>Saídas Hoje</span>
+            <i class="fa-solid fa-arrow-up"></i>
+          </div>
+          <h3>19</h3>
+          <p>Materiais liberados e expedidos</p>
+        </div>
+
+        <div class="card kpi-card red">
+          <div class="card-top">
+            <span>Itens Críticos</span>
+            <i class="fa-solid fa-triangle-exclamation"></i>
+          </div>
+          <h3>3</h3>
+          <p>Necessitam reposição imediata</p>
+        </div>
+
+        <div class="card kpi-card green">
+          <div class="card-top">
+            <span>Valor em Estoque</span>
+            <i class="fa-solid fa-sack-dollar"></i>
+          </div>
+          <h3>R$ 286,9 mil</h3>
+          <p>Capital atual armazenado</p>
+        </div>
+      </section>
+
+      <section class="dashboard-grid">
+        <div class="card chart-card">
+          <div class="section-header">
+            <h2>Fluxo de Movimentações</h2>
+            <span>Últimos 7 dias</span>
+          </div>
+
+          <div class="fake-chart bars">
+            <div class="bar-group">
+              <div class="bar" style="height: 45%;"></div>
+              <span>Seg</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 62%;"></div>
+              <span>Ter</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 58%;"></div>
+              <span>Qua</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 81%;"></div>
+              <span>Qui</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 93%;"></div>
+              <span>Sex</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 54%;"></div>
+              <span>Sáb</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar" style="height: 66%;"></div>
+              <span>Dom</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card summary-card">
+          <div class="section-header">
+            <h2>Resumo do Estoque</h2>
+            <span>Status atual</span>
+          </div>
+
+          <div class="summary-list">
+            <div class="summary-item">
+              <span>Giro médio semanal</span>
+              <strong>1.240 un</strong>
+            </div>
+            <div class="summary-item">
+              <span>Taxa de ruptura</span>
+              <strong>2,4%</strong>
+            </div>
+            <div class="summary-item">
+              <span>Reposições pendentes</span>
+              <strong>5</strong>
+            </div>
+            <div class="summary-item">
+              <span>Acuracidade inventário</span>
+              <strong>97%</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bottom-grid">
+        <div class="card table-card">
+          <div class="section-header">
+            <h2>Últimas Movimentações</h2>
+            <span>Tempo real</span>
+          </div>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Data</th>
+                  <th>Tipo</th>
+                  <th>Item</th>
+                  <th>Quantidade</th>
+                  <th>Origem</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>19/04/2026</td>
+                  <td>Entrada</td>
+                  <td>Cimento CP-II</td>
+                  <td>4.000 kg</td>
+                  <td>Compra fornecedor</td>
+                  <td><span class="badge green">Registrado</span></td>
+                </tr>
+                <tr>
+                  <td>19/04/2026</td>
+                  <td>Saída</td>
+                  <td>Bloco 14x19x39</td>
+                  <td>1.500 un</td>
+                  <td>Pedido #1028</td>
+                  <td><span class="badge blue">Expedido</span></td>
+                </tr>
+                <tr>
+                  <td>19/04/2026</td>
+                  <td>Saída</td>
+                  <td>Canaleta 14</td>
+                  <td>300 un</td>
+                  <td>Pedido #1029</td>
+                  <td><span class="badge gold">Separação</span></td>
+                </tr>
+                <tr>
+                  <td>18/04/2026</td>
+                  <td>Entrada</td>
+                  <td>Paver Cinza</td>
+                  <td>2.000 un</td>
+                  <td>Ordem de Produção #OP221</td>
+                  <td><span class="badge green">Concluído</span></td>
+                </tr>
+                <tr>
+                  <td>18/04/2026</td>
+                  <td>Saída</td>
+                  <td>Laje treliçada</td>
+                  <td>120 un</td>
+                  <td>Pedido #1026</td>
+                  <td><span class="badge blue">Despachado</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card stock-card">
+          <div class="section-header">
+            <h2>Alertas de Reposição</h2>
+            <span>Prioridade</span>
+          </div>
+
+          <div class="alert-list">
+            <div class="alert-item">
+              <div>
+                <strong>Cimento CP-II</strong>
+                <p>12 sacos restantes</p>
+              </div>
+              <span class="alert-danger">Crítico</span>
+            </div>
+
+            <div class="alert-item">
+              <div>
+                <strong>Brita 1</strong>
+                <p>1,2 m³ disponível</p>
+              </div>
+              <span class="alert-warning">Baixo</span>
+            </div>
+
+            <div class="alert-item">
+              <div>
+                <strong>Aditivo plastificante</strong>
+                <p>4 unidades em estoque</p>
+              </div>
+              <span class="alert-danger">Crítico</span>
+            </div>
+
+            <div class="alert-item">
+              <div>
+                <strong>Malha POP</strong>
+                <p>16 unidades disponíveis</p>
+              </div>
+              <span class="alert-ok">Normal</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+  </div>
+
+</body>
+</html>
